@@ -8,6 +8,7 @@ const LoginScreen = ({ navigation }) => {
       <TextInput style={styles.input} placeholder="Username" />
       <TextInput style={styles.input} placeholder="Password" secureTextEntry />
       <Button title="Login" onPress={() => alert('Logged in')} />
+      <Button title="Register" onPress={() => navigation.navigate('Register')} />
     </View>
   );
 };
