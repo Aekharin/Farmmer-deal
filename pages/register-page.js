@@ -9,7 +9,7 @@ const RegisterScreen = ({ navigation }) => {
             <TextInput style={styles.input} placeholder="Email" />
             <TextInput style={styles.input} placeholder="Password" secureTextEntry />
             <Button title="Register" onPress={() => alert('Registered')} />
-            <Button title="Login" onPress={() => navigation.navigate('Login')} />
+            <Button title="Login" onPress={() => navigation.navigate('login')} />
         </View>
     );
 };

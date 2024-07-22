@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import HomeMarketScreen from './home-market-page';
 
 const LoginScreen = ({ navigation }) => {
   return (
@@ -7,8 +8,8 @@ const LoginScreen = ({ navigation }) => {
       <Text style={styles.title}>Login</Text>
       <TextInput style={styles.input} placeholder="Username" />
       <TextInput style={styles.input} placeholder="Password" secureTextEntry />
-      <Button title="Login" onPress={() => navigation.navigate('HomeMarket')} />
-      <Button title="Register" onPress={() => navigation.navigate('Register')} />
+      <Button title="Login" onPress={() => navigation.navigate('home-market')} />
+      <Button title="Register" onPress={() => navigation.navigate('register')} />
     </View>
   );
 };

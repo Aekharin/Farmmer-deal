@@ -3,7 +3,10 @@ import { View, Text, TouchableOpacity, ImageBackground } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { MyStyles } from './styles/styles.js';
 
+
 const HomeScreen = ({ navigation }) => {
+
+
   return (
     <ImageBackground source={require('./assets/vegetable-box.jpg')} style={MyStyles.background}>
       <LinearGradient
@@ -16,9 +19,10 @@ const HomeScreen = ({ navigation }) => {
           <Text style={MyStyles.subtitle}>
             เปิดประสบการณ์การซื้อขายที่มีประสิทธิภาพที่สุดสำหรับคุณ
           </Text>
-          <TouchableOpacity style={MyStyles.button} onPress={() => navigation.navigate('Login')}>
+          <TouchableOpacity style={MyStyles.button} onPress={() => navigation.navigate('login')}>
             <Text style={MyStyles.buttonText}>เริ่มต้น</Text>
           </TouchableOpacity>
+
         </View>
       </LinearGradient>
     </ImageBackground>
